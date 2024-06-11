@@ -1,0 +1,104 @@
+.grand-titre{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(199, 235, 235);
+    color: black;
+    justify-content: center;
+    text-align: center;
+}
+.hh h2{
+    position: absolute;
+font-size: 50px;
+font-weight: 600;
+margin-top: -200px;
+margin-left: 500px;
+}
+.black-block{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+}
+.cordo{
+    display: flex;
+    padding: 20px;
+}
+.cordo p{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.cordo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.black-content{
+    width: 70%;
+margin-left: 200px;
+}
+.course-wrap-meta{
+    margin-left: 200px !important;
+}
+.contenant{
+    width: calc(100%-300px);
+    max-width: 100%;
+    padding-right: 40px;
+    padding-top: 60px;
+}
+.course-box{
+    margin-bottom: 10px;
+    border: 1px solid rgba(204, 204, 204, 0.3);
+    border-radius: 5px;
+}
+.course-box_title{
+    height: 50px;
+    display: flex;
+    position: relative;
+    padding: 0 45px 0x 30px;
+    background: rgba(181, 187, 211, 0.15);
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+.course-box_content-inner{
+-webkit-animation-name: course-box_content-inner-transform;
+animation-name: course-box_content-inner-transform;
+-webkit-animation-duration: 0.3s;
+animation-duration: 0.3s;
+-webkit-animation-timing-function: ease-in-out;
+animation-timing-function: ease-in-out;
+-webkit-animation-iteration-count: 1;
+animation-iteration-count: 1;
+-webkit-animation-direction: normal;
+animation-direction: normal;
+
+}
+.course-box_content {
+    display: none;
+  }
+  
+  .course-box_title {
+    cursor: pointer;
+    color: #175419;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .course-box_title::before {
+    content: "\f0da"; /* Code Unicode pour l'icône de la flèche vers le bas */
+    font-family: "Font Awesome"; /* Remplacez par le nom de la famille de police de votre bibliothèque d'icônes */
+    float: right;
+    margin-right: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .course-box_title.active::before {
+    transform: rotate(180deg);
+  }
+  
+
+  
+  .course-box_title.active + .course-box_content {
+    display: block;
+  }
